@@ -26,3 +26,4 @@ public class MessageText implements Message
         return message;
     }
 }
+

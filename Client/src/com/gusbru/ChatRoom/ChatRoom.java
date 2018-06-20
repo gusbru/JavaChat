@@ -45,7 +45,7 @@ public class ChatRoom implements Initializable
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
-
+        btnSend.setOnAction(event -> sendMessage());
     }
 
     public void setStage(Stage stage) throws Exception
@@ -94,5 +94,23 @@ public class ChatRoom implements Initializable
             System.err.println("Error starting the listener...");
             e.printStackTrace();
         }
+    }
+
+    private void sendMessage()
+    {
+        String messageString = txtMessage.getText();
+        String sender = listViewUsers.getSelectionModel().getSelectedItem();
+        MessageText messageText = new MessageText(userName, sender, messageString);
+        txtMessage.clear();
+
+        if (chkPrivateMessage.isSelected())
+        {
+            System.out.println();
+        }
+        else
+        {
+
+        }
+
     }
 }

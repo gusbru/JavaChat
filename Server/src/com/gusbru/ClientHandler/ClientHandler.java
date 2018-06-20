@@ -135,8 +135,7 @@ public class ClientHandler implements Runnable
             e.printStackTrace();
         }
 
-
-
+        
 
         //#######################################################
         System.out.println("Number of users in each room");
@@ -152,7 +151,5 @@ public class ClientHandler implements Runnable
         // listening for outgoing messages
 
         // listening for user exit
-
-        // use join to avoid that this clientHandler dies after launch the listeners
     }
 }
