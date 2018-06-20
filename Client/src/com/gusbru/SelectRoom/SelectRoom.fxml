@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gusbru.SelectRoom.SelectRoom">
+   <children>
+      <Label layoutX="182.0" layoutY="25.0" text="Welcome:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUser" layoutX="275.0" layoutY="25.0" prefHeight="20.0" prefWidth="273.0" text="User">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="79.0" text="Select an available room:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewRoomsInfo" layoutX="14.0" layoutY="110.0" prefHeight="200.0" prefWidth="580.0">
+        <columns>
+          <TableColumn fx:id="columnRoomName" prefWidth="348.0" text="Room Name" />
+          <TableColumn fx:id="columnOnlineUsers" prefWidth="102.0" text="Online Users" />
+            <TableColumn fx:id="columnCapacity" prefWidth="129.0" text="Maximum Capacity" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnEnter" layoutX="176.0" layoutY="324.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="227.0" text="Enter" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="180.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
