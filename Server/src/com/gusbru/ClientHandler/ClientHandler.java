@@ -124,11 +124,10 @@ public class ClientHandler implements Runnable
             e.printStackTrace();
         }
 
-        // for all users (but the current one) in the current room, update the usersList
-        // for the current one send the complete list
+        // for all users update the entire usersList
         try
         {
-            rooms.get(roomID).updateUsersList(userName);
+            rooms.get(roomID).updateUsersList();
         }
         catch (Exception e)
         {

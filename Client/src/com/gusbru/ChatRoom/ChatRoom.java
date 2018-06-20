@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class ChatRoom implements Initializable
@@ -75,9 +76,10 @@ public class ChatRoom implements Initializable
         this.input  = input;
     }
 
-    public void updateUsersList(String newUserName)
+    public void updateUsersList(ArrayList<String> newUserList)
     {
-        listViewUsers.getItems().add(newUserName);
+        listViewUsers.getItems().clear();
+        listViewUsers.getItems().addAll(newUserList);
     }
 
     public void startListener()

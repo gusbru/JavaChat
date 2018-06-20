@@ -1,7 +1,7 @@
 package com.gusbru.DB.DBO;
 
 import com.gusbru.ClientHandler.ClientHandler;
-import com.gusbru.Message.MessageNewClient;
+import com.gusbru.Message.MessageNewClientList;
 
 import java.util.ArrayList;
 
@@ -92,17 +92,15 @@ public class Room implements Cloneable
         return users;
     }
 
-    public void updateUsersList(String newUserName) throws Exception
+    public void updateUsersList()
     {
-        if (newUserName.isEmpty())
-            throw new Exception("Username cannot be empty");
-
+        ArrayList<String> newClientList = getUserList();
         try
         {
-            MessageNewClient messageNewClient = new MessageNewClient(newUserName);
+            MessageNewClientList messageNewClientList = new MessageNewClientList(newClientList);
             for (ClientHandler client : clients)
             {
-                client.sendMessage(messageNewClient);
+                client.sendMessage(messageNewClientList);
             }
         }
         catch (Exception e)
