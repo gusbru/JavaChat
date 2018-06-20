@@ -1,10 +1,14 @@
 package com.gusbru.ChatRoom;
 
-import com.gusbru.Listeners.ListenerNewMessages;
+import com.gusbru.Listener.ListenerNewMessages;
+import com.gusbru.Message.Message;
 import com.gusbru.Message.MessageText;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.ObjectInputStream;
@@ -34,17 +38,22 @@ public class ChatRoom implements Initializable
     private TextField txtMessage;
 
     @FXML
-    private Label lblRoomName;
+    private Label lblRoomName, lblCurrentUser;
 
     private Stage currentStage;
     private String roomName, userName;
     private ObjectInputStream input;
     private ObjectOutputStream output;
+    private ObservableList<MessageText> data = FXCollections.observableArrayList();
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
+        columnUser.setCellValueFactory(new PropertyValueFactory<>("sender"));
+        columnMessage.setCellValueFactory(new PropertyValueFactory<>("message"));
+        tableViewMessages.setItems(data);
+
         btnSend.setOnAction(event -> sendMessage());
     }
 
@@ -68,6 +77,7 @@ public class ChatRoom implements Initializable
     public void setUserName(String userName)
     {
         this.userName = userName;
+        lblCurrentUser.setText(userName);
     }
 
     public void setConnections(ObjectOutputStream output, ObjectInputStream input)
@@ -98,19 +108,26 @@ public class ChatRoom implements Initializable
 
     private void sendMessage()
     {
-        String messageString = txtMessage.getText();
-        String sender = listViewUsers.getSelectionModel().getSelectedItem();
-        MessageText messageText = new MessageText(userName, sender, messageString);
-        txtMessage.clear();
-
-        if (chkPrivateMessage.isSelected())
+        try
         {
-            System.out.println();
+            String messageString = txtMessage.getText();
+            String recipient = listViewUsers.getSelectionModel().getSelectedItem();
+            boolean isPrivate = chkPrivateMessage.isSelected();
+            MessageText messageText = new MessageText(recipient, userName, messageString, isPrivate);
+
+            txtMessage.clear();
+            output.writeObject(messageText);
         }
-        else
+        catch (Exception e)
         {
-
+            System.err.println("Error sending message");
+            e.printStackTrace();
         }
+    }
 
+    public void newMessageReceived(MessageText messageText)
+    {
+        data.add(messageText);
+        tableViewMessages.setItems(data);
     }
 }

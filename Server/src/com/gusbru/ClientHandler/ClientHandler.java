@@ -1,10 +1,8 @@
 package com.gusbru.ClientHandler;
 
 import com.gusbru.DB.DBO.Room;
-import com.gusbru.Message.Message;
-import com.gusbru.Message.MessageEnterRoom;
-import com.gusbru.Message.MessageLogin;
-import com.gusbru.Message.MessageRooms;
+import com.gusbru.Listener.ListenerNewMessages;
+import com.gusbru.Message.*;
 import com.gusbru.Rooms.RoomInfo;
 
 import java.io.ObjectInputStream;
@@ -37,7 +35,7 @@ public class ClientHandler implements Runnable
         return this.userName;
     }
 
-    public void sendMessage(Message message) throws Exception
+    public void sendMessageToCurrentUser(Message message) throws Exception
     {
         if (message == null)
             throw new Exception("Message cannot be null");
@@ -51,6 +49,26 @@ public class ClientHandler implements Runnable
             System.err.println("Error sending message to client");
             e.printStackTrace();
         }
+    }
+
+    // TODO: sendMessageToAllUsers
+    public void sendMessageTextToAllUsers(MessageText messageText)
+    {
+
+    }
+
+    // TODO: sendMessageToSpecificUser
+    public void sendMessageTextToSpecificUser(MessageText messageText) throws Exception
+    {
+        String recipient = messageText.getRecipient();
+
+        // find recipient handler
+        ClientHandler recipientHandler = rooms.get(roomID).getClientHandler(recipient);
+
+        if (recipient == null)
+            throw new Exception("Username not found");
+
+        recipientHandler.sendMessageToCurrentUser(messageText);
     }
 
     public void run()
@@ -135,7 +153,7 @@ public class ClientHandler implements Runnable
             e.printStackTrace();
         }
 
-        
+
 
         //#######################################################
         System.out.println("Number of users in each room");
@@ -145,11 +163,14 @@ public class ClientHandler implements Runnable
         }
         //#######################################################
 
-
+        // TODO: finish the incoming messages listener
         // listening for incoming messages
+        new ListenerNewMessages(output, input,this);
 
+        // TODO: outgoing messages listener
         // listening for outgoing messages
 
+        // TODO: exit user listener (?)
         // listening for user exit
     }
 }

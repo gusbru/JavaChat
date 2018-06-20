@@ -1,8 +1,9 @@
-package com.gusbru.Listeners;
+package com.gusbru.Listener;
 
 import com.gusbru.ChatRoom.ChatRoom;
 import com.gusbru.Message.Message;
 import com.gusbru.Message.MessageNewClientList;
+import com.gusbru.Message.MessageText;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -36,10 +37,18 @@ public class ListenerNewMessages implements Runnable
             try
             {
                 Message message = (Message) input.readObject();
+
                 if (message instanceof MessageNewClientList)
                 {
                     MessageNewClientList messageNewClientList = (MessageNewClientList) message;
                     chatRoom.updateUsersList(messageNewClientList.getClientList());
+                }
+
+                if (message instanceof MessageText)
+                {
+                    // populate the tableview
+                    MessageText messageText = (MessageText) message;
+                    chatRoom.newMessageReceived(messageText);
                 }
 
             }

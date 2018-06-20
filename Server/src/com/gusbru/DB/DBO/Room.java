@@ -100,7 +100,7 @@ public class Room implements Cloneable
             MessageNewClientList messageNewClientList = new MessageNewClientList(newClientList);
             for (ClientHandler client : clients)
             {
-                client.sendMessage(messageNewClientList);
+                client.sendMessageToCurrentUser(messageNewClientList);
             }
         }
         catch (Exception e)
@@ -109,6 +109,24 @@ public class Room implements Cloneable
             e.printStackTrace();
         }
 
+    }
+
+    public ClientHandler getClientHandler(String clientName) throws Exception
+    {
+        if (clientName.isEmpty())
+            throw new Exception("Invalid client name");
+
+        ClientHandler clientHandler = null;
+        for (ClientHandler client : clients)
+        {
+            if (client.getUserName().equals(clientName))
+            {
+                clientHandler = client;
+                break;
+            }
+        }
+
+        return clientHandler;
     }
 
     public boolean equals(Object obj)
