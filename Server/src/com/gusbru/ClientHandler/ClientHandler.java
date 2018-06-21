@@ -84,6 +84,7 @@ public class ClientHandler implements Runnable
             throw new Exception("Username not found");
 
         recipientHandler.sendMessageTextToCurrentUser(messageText);
+        this.sendMessageTextToCurrentUser(messageText);
     }
 
     public void run()

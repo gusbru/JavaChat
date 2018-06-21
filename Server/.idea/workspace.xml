@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ece2e45c-e766-47c8-abe0-d7bb96b70040" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/com/gusbru/Message/MessageText.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/com/gusbru/Message/MessageText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gusbru/ClientHandler/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gusbru/ClientHandler/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gusbru/Listener/ListenerNewMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gusbru/Listener/ListenerNewMessages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/com/gusbru/Connection/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/com/gusbru/Connection/Connection.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/gusbru/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="307">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClientHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/gusbru/ClientHandler/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -102,7 +98,6 @@
         <option value="$PROJECT_DIR$/src/com/gusbru/Message/MessageLogin.java" />
         <option value="$PROJECT_DIR$/src/com/gusbru/Rooms/RoomsInfo.java" />
         <option value="$PROJECT_DIR$/src/com/gusbru/Message/MessageRooms.java" />
-        <option value="$PROJECT_DIR$/src/com/gusbru/Main.java" />
         <option value="$PROJECT_DIR$/src/com/gusbru/Rooms/RoomInfo.java" />
         <option value="$PROJECT_DIR$/src/com/gusbru/Message/MessageEnterRoom.java" />
         <option value="$PROJECT_DIR$/src/com/gusbru/Message/MessageNewClient.java" />
@@ -111,6 +106,7 @@
         <option value="$PROJECT_DIR$/src/com/gusbru/Message/MessageText.java" />
         <option value="$PROJECT_DIR$/src/com/gusbru/Listener/ListenerNewMessages.java" />
         <option value="$PROJECT_DIR$/src/com/gusbru/ClientHandler/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/gusbru/Main.java" />
       </list>
     </option>
   </component>
@@ -226,12 +222,12 @@
       <workItem from="1529522490052" duration="2331000" />
       <workItem from="1529525783447" duration="511000" />
       <workItem from="1529526785298" duration="6281000" />
-      <workItem from="1529541017306" duration="2215000" />
+      <workItem from="1529541017306" duration="2789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26495000" />
+    <option name="totallyTimeSpent" value="27069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="6" />
@@ -662,16 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gusbru/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gusbru/DB/DAO/Rooms.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -729,6 +715,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="85" column="67" lean-forward="true" selection-start-line="85" selection-start-column="67" selection-end-line="85" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gusbru/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

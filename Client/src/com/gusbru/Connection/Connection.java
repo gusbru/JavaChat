@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
@@ -60,8 +61,10 @@ public class Connection implements Initializable
         }
         catch (Exception e)
         {
-            System.err.println("Error connecting to server");
+            String errorMessage = "Error connecting to server";
+            System.err.println(errorMessage);
             e.printStackTrace();
+            showErrorDialog(errorMessage, errorMessage);
         }
 
         try
@@ -113,5 +116,15 @@ public class Connection implements Initializable
             System.err.println("Error opening ChatRoom");
             e.printStackTrace();
         }
+    }
+
+    private void showErrorDialog(String errorHeaderText, String errorContentText)
+    {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setHeaderText(errorHeaderText);
+        alert.setContentText(errorContentText);
+
+        alert.showAndWait();
     }
 }
