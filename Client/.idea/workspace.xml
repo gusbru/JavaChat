@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca056fb6-980a-458c-8e70-8d3082e0c5df" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/gusbru/Connection/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gusbru/Connection/Connection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/src/com/gusbru/ClientHandler/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/com/gusbru/ClientHandler/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/com/gusbru/Listener/ListenerNewMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/com/gusbru/Listener/ListenerNewMessages.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -259,12 +259,12 @@
       <workItem from="1529522367974" duration="2881000" />
       <workItem from="1529525794977" duration="498000" />
       <workItem from="1529526756252" duration="5822000" />
-      <workItem from="1529541003667" duration="2914000" />
+      <workItem from="1529541003667" duration="3999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28328000" />
+    <option name="totallyTimeSpent" value="29413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="6" />

@@ -84,7 +84,46 @@ public class ClientHandler implements Runnable
             throw new Exception("Username not found");
 
         recipientHandler.sendMessageTextToCurrentUser(messageText);
-        this.sendMessageTextToCurrentUser(messageText);
+        if (!recipientHandler.equals(this))
+            this.sendMessageTextToCurrentUser(messageText);
+    }
+
+    public boolean equals(Object obj)
+    {
+        if (this == obj)
+            return true;
+
+        if (obj == null)
+            return false;
+
+        if (this.getClass() != obj.getClass())
+            return false;
+
+
+        ClientHandler test = (ClientHandler) obj;
+
+        if (!this.socket.equals(test.socket))
+            return false;
+
+        if (!this.output.equals(test.output))
+            return false;
+
+        if (!this.input.equals(test.input))
+            return false;
+
+        if (!this.userName.equals(test.userName))
+            return false;
+
+        if (this.roomID != test.roomID)
+            return false;
+
+        for (int i = 0; i < rooms.size(); i++)
+        {
+            if (!this.rooms.get(i).equals(test.rooms.get(i)))
+                return false;
+        }
+
+        return true;
     }
 
     public void run()
@@ -179,14 +218,10 @@ public class ClientHandler implements Runnable
         }
         //#######################################################
 
-        // TODO: finish the incoming messages listener
         // listening for incoming messages
         new ListenerNewMessages(output, input,this);
 
-        // TODO: outgoing messages listener
-        // listening for outgoing messages
-
-        // TODO: exit user listener (?)
+        // TODO: exit user listener (can be done inside the listener)
         // listening for user exit
     }
 }

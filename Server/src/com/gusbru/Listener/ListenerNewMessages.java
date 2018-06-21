@@ -56,7 +56,6 @@ public class ListenerNewMessages implements Runnable
 
                     if (isPrivate)
                     {
-                        // TODO: send private message
                         clientHandler.sendMessageTextToSpecificUser(messageText);
                     }
                     else
@@ -68,6 +67,7 @@ public class ListenerNewMessages implements Runnable
             catch (Exception e)
             {
                 System.err.println("Error listening messages");
+                System.err.println("====> " + clientHandler.getUserName());
                 e.printStackTrace();
             }
         }
