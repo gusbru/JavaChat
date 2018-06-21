@@ -19,6 +19,7 @@ public class ListenerNewMessages implements Runnable
         {
             this.output = output;
             this.input = input;
+            this.clientHandler = clientHandler;
             Thread thread = new Thread(this);
             thread.start();
         }
@@ -32,11 +33,12 @@ public class ListenerNewMessages implements Runnable
     @Override
     public void run()
     {
+        Message message;
         while (input != null && output != null)
         {
             try
             {
-                Message message = (Message) input.readObject();
+                message = (Message) input.readObject();
 
                 if (message instanceof MessageText)
                 {
@@ -60,7 +62,7 @@ public class ListenerNewMessages implements Runnable
                     else
                     {
                         // TODO: send message to everybody
-//                        clientHandler.sendMessageTextToAllUsers(messageText);
+                        clientHandler.sendMessageTextToAllUsers(messageText);
                     }
                 }
             }

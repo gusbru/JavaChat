@@ -51,10 +51,26 @@ public class ClientHandler implements Runnable
         }
     }
 
+    public void sendMessageTextToCurrentUser(MessageText messageText) {
+        try
+        {
+            output.writeObject(messageText);
+        }
+        catch (Exception e)
+        {
+            System.err.println("Error sending text message to client");
+            e.printStackTrace();
+        }
+    }
+
     // TODO: sendMessageToAllUsers
     public void sendMessageTextToAllUsers(MessageText messageText)
     {
-
+        ArrayList<ClientHandler> clientHandlers = rooms.get(roomID).getClientsHandlers();
+        for (ClientHandler clientHandler : clientHandlers)
+        {
+            clientHandler.sendMessageTextToCurrentUser(messageText);
+        }
     }
 
     // TODO: sendMessageToSpecificUser

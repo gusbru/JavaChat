@@ -129,6 +129,11 @@ public class Room implements Cloneable
         return clientHandler;
     }
 
+    public ArrayList<ClientHandler> getClientsHandlers()
+    {
+        return clients;
+    }
+
     public boolean equals(Object obj)
     {
         if (obj == this)

@@ -7,6 +7,12 @@ public class MessageText implements Message
 
     public MessageText(String recipient, String sender, String message, boolean isPrivate)
     {
+        if (recipient == null)
+            recipient = "";
+
+        if (message == null)
+            message = "";
+
         this.recipient = recipient;
         this.sender = sender;
         this.message = message;

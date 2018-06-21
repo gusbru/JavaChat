@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ece2e45c-e766-47c8-abe0-d7bb96b70040" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/gusbru/Listener/ListenerNewMessages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/com/gusbru/ChatRoom/ChatRoom.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/com/gusbru/ChatRoom/ChatRoom.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/com/gusbru/ChatRoom/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/com/gusbru/ChatRoom/ChatRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/com/gusbru/Listeners/ListenerNewMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/com/gusbru/Listener/ListenerNewMessages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/src/com/gusbru/Message/MessageText.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/com/gusbru/Message/MessageText.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/gusbru/ClientHandler/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gusbru/ClientHandler/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/gusbru/DB/DBO/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gusbru/DB/DBO/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gusbru/Message/MessageText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gusbru/Message/MessageText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gusbru/Listener/ListenerNewMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gusbru/Listener/ListenerNewMessages.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +22,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/gusbru/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state>
               <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -50,46 +46,37 @@
       <file leaf-file-name="Room.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/gusbru/DB/DBO/Room.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="116" column="55" selection-start-line="116" selection-start-column="55" selection-end-line="116" selection-end-column="55" />
+            <state relative-caret-position="918">
+              <caret line="133" column="23" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3286#3287#0" expanded="true" />
+                <element signature="e#3315#3316#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientHandler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClientHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/gusbru/ClientHandler/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="70" column="63" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
+            <state relative-caret-position="240">
+              <caret line="71" column="68" selection-start-line="71" selection-start-column="68" selection-end-line="71" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1013#1014#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListenerNewMessages.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ListenerNewMessages.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/gusbru/Listener/ListenerNewMessages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+            <state relative-caret-position="-85">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageRooms.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/gusbru/Message/MessageRooms.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -121,10 +108,10 @@
         <option value="$PROJECT_DIR$/src/com/gusbru/Message/MessageEnterRoom.java" />
         <option value="$PROJECT_DIR$/src/com/gusbru/Message/MessageNewClient.java" />
         <option value="$PROJECT_DIR$/src/com/gusbru/Message/MessageNewClientList.java" />
-        <option value="$PROJECT_DIR$/src/com/gusbru/Message/MessageText.java" />
         <option value="$PROJECT_DIR$/src/com/gusbru/DB/DBO/Room.java" />
-        <option value="$PROJECT_DIR$/src/com/gusbru/ClientHandler/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/gusbru/Message/MessageText.java" />
         <option value="$PROJECT_DIR$/src/com/gusbru/Listener/ListenerNewMessages.java" />
+        <option value="$PROJECT_DIR$/src/com/gusbru/ClientHandler/ClientHandler.java" />
       </list>
     </option>
   </component>
@@ -137,7 +124,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="202" />
     <option name="width" value="1440" />
     <option name="height" value="812" />
@@ -148,8 +135,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -187,6 +172,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,15 +226,17 @@
       <workItem from="1529519276015" duration="2004000" />
       <workItem from="1529522490052" duration="2331000" />
       <workItem from="1529525783447" duration="511000" />
-      <workItem from="1529526785298" duration="6245000" />
+      <workItem from="1529526785298" duration="6281000" />
+      <workItem from="1529541017306" duration="1580000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24244000" />
+    <option name="totallyTimeSpent" value="25860000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="202" width="1440" height="812" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="812" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -263,7 +252,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -286,6 +275,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/gusbru/Message/MessageRooms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gusbru/Listener/ListenerNewMessages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gusbru/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -310,9 +316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -322,6 +325,8 @@
           <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3286#3287#0" expanded="true" />
+            <element signature="e#3315#3316#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -339,8 +344,6 @@
           <caret line="143" column="1" lean-forward="true" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -369,9 +372,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -381,6 +381,8 @@
           <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3286#3287#0" expanded="true" />
+            <element signature="e#3315#3316#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -398,8 +400,6 @@
           <caret line="146" column="65" selection-start-line="146" selection-start-column="65" selection-end-line="146" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -428,9 +428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -440,6 +437,8 @@
           <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3286#3287#0" expanded="true" />
+            <element signature="e#3315#3316#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -457,8 +456,6 @@
           <caret line="116" column="34" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -487,9 +484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -499,6 +493,8 @@
           <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3286#3287#0" expanded="true" />
+            <element signature="e#3315#3316#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -516,8 +512,6 @@
           <caret line="106" column="43" lean-forward="true" selection-start-line="106" selection-start-column="43" selection-end-line="106" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -546,9 +540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -558,6 +549,8 @@
           <caret line="77" column="52" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3286#3287#0" expanded="true" />
+            <element signature="e#3315#3316#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -582,8 +575,6 @@
           <caret line="82" column="1" lean-forward="true" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -612,9 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -624,6 +612,8 @@
           <caret line="77" column="52" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3286#3287#0" expanded="true" />
+            <element signature="e#3315#3316#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -634,8 +624,6 @@
           <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -672,16 +660,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gusbru/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state>
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -693,9 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -709,17 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gusbru/Message/MessageText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gusbru/Message/MessageRooms.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -727,10 +697,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gusbru/Message/MessageText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gusbru/DB/DBO/Room.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="116" column="55" selection-start-line="116" selection-start-column="55" selection-end-line="116" selection-end-column="55" />
+        <state relative-caret-position="918">
+          <caret line="133" column="23" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3286#3287#0" expanded="true" />
+            <element signature="e#3315#3316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gusbru/Listener/ListenerNewMessages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -739,20 +728,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gusbru/ClientHandler/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="70" column="63" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gusbru/Listener/ListenerNewMessages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+        <state relative-caret-position="240">
+          <caret line="71" column="68" selection-start-line="71" selection-start-column="68" selection-end-line="71" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
