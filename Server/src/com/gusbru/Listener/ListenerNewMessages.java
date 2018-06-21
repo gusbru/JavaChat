@@ -57,11 +57,10 @@ public class ListenerNewMessages implements Runnable
                     if (isPrivate)
                     {
                         // TODO: send private message
-//                        clientHandler.sendMessageTextToSpecificUser(messageText);
+                        clientHandler.sendMessageTextToSpecificUser(messageText);
                     }
                     else
                     {
-                        // TODO: send message to everybody
                         clientHandler.sendMessageTextToAllUsers(messageText);
                     }
                 }

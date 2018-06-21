@@ -51,7 +51,7 @@ public class ClientHandler implements Runnable
         }
     }
 
-    public void sendMessageTextToCurrentUser(MessageText messageText) {
+    private void sendMessageTextToCurrentUser(MessageText messageText) {
         try
         {
             output.writeObject(messageText);
@@ -63,7 +63,6 @@ public class ClientHandler implements Runnable
         }
     }
 
-    // TODO: sendMessageToAllUsers
     public void sendMessageTextToAllUsers(MessageText messageText)
     {
         ArrayList<ClientHandler> clientHandlers = rooms.get(roomID).getClientsHandlers();
@@ -84,7 +83,7 @@ public class ClientHandler implements Runnable
         if (recipient == null)
             throw new Exception("Username not found");
 
-        recipientHandler.sendMessageToCurrentUser(messageText);
+        recipientHandler.sendMessageTextToCurrentUser(messageText);
     }
 
     public void run()
